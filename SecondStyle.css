@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-header-color: hsla(0, 0%, 0%, 0.507);
+
+  --bg-color: hsla(0, 0%, 0%, 1);
+  --color-text: rgb(255, 255, 255);
+  --secondary-color-text: rgba(201, 201, 201, 0.829);
+}
+
+body {
+  color: var(--color-text);
+  font-family: 'Epilogue', sans-serif;
+  overflow-x: hidden;
+  background: var(--bg-color);
+}
+
+#SecondScreen #header_e-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#SecondScreen #navigation div:nth-child(1) {
+  font-size: 3.6rem;
+  gap: 3rem;
+}
+
+#SecondScreen #navigation div {
+  align-items: center;
+}
+
+#SecondScreen #navigation div:hover,
+#SecondScreen a:hover {
+  color: rgb(180, 180, 180);
+
+  transition: color 400ms;
+}
+
+#SecondScreen #navigation {
+
+  background: var(--bg-header-color);
+  backdrop-filter: blur(1.5rem);
+  display: flex;
+  
+  justify-content: space-between;
+  padding-inline: 3.5rem;
+  list-style: none;
+  padding: 3.5rem 3.5rem 2.8rem 3.5rem;
+}
+
+#SecondScreen #header_e-mail {
+  font-size: 2.5rem;
+}
+
+#SecondScreen #navi {
+  position: fixed;
+  width: 100vw;
+}
+
+#SecondScreen a {
+  transition: color 400ms;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+#SecondScreen h1 {
+  font-size: 7.8rem;
+}
+
+#SecondScreen .header-projects {
+  display: flex;
+  gap: 1rem;
+
+  flex-direction: column;
+  text-align: left;
+}
+
+#SecondScreen main {
+  padding-top: 16.5rem;
+}
+
+#SecondScreen .header-projects p {
+  width: 60rem;
+
+  color: var(--secondary-color-text);
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+#SecondScreen .Projects img {
+  transition: transform 500ms;
+}
+
+#SecondScreen .Projects img:hover {
+  transform: scale(1.03);
+  transition: transform 500ms;
+}
+
+#SecondScreen #content {
+  gap: 5.8rem;
+  display: flex;
+  width: 120rem;
+  margin: 0 auto;
+}
+
+#SecondScreen .Projects img {
+  height: 34rem;
+  width: 71.6rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+  object-fit: cover;
+  transition: 500ms;
+}
+
+#SecondScreen .Projects p {
+  margin-top: 1.2rem;
+  color: var(--secondary-color-text);
+  font-size: 2.8rem;
+}
+
+#SecondScreen .Projects h2 {
+  font-size: 2rem;
+}
+
+#SecondScreen .Explanation h2 {
+  font-size: 4.8rem;
+  margin-bottom: 1.8rem;
+}
+
+#SecondScreen .links {
+  padding-top: 1.2rem;
+  gap: 2.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#SecondScreen .Explanation a {
+  font-size: 3.4rem;
+}
+
+#SecondScreen .Explanation p {
+  text-align: left;
+  width: 58rem;
+  font-size: 2.8rem;
+  color: var(--secondary-color-text);
+}
+
+@media (max-width: 1560px) {
+  #SecondScreen #content {
+    gap: 5.8rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #SecondScreen h1 {
+    font-size: 5.4rem;
+  }
+
+  #SecondScreen .Projects img {
+    height: 60vh;
+    width: 87vw;
+    margin-bottom: 0.8rem;
+    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+    object-fit: cover;
+    transition: 500ms;
+  }
+
+  #SecondScreen .Explanation h2 {
+    font-size: 3.4rem;
+    margin-bottom: 1.8rem;
+  }
+
+  #SecondScreen .Explanation p {
+    width: 85vw;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  #SecondScreen #header_e-mail {
+    font-size: 1.58rem;
+  }
+
+  #SecondScreen .Explanation a {
+    font-size: 1.8rem;
+  }
+  #SecondScreen .Explanation a + a {
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (max-width: 910px) {
+  #SecondScreen #content {
+    gap: 5.8rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #SecondScreen #navigation a  {
+    font-size: 3.6rem;
+  }
+
+  #SecondScreen #navigation  {
+    justify-content: center;
+  }
+
+
+  #SecondScreen h1 {
+    font-size: 4.8rem;
+  }
+
+  #SecondScreen .Projects img {
+    height: 21rem;
+    width: 40.6rem;
+    margin-bottom: 0.8rem;
+    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+    object-fit: cover;
+    transition: 500ms;
+  }
+
+  #SecondScreen .Explanation h2 {
+    font-size: 3.4rem;
+    margin-bottom: 1.8rem;
+  }
+
+  #SecondScreen .Explanation p {
+    width: 85vw;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  #SecondScreen #header_e-mail {
+    display: none;
+    font-size: 2rem;
+  }
+
+  #SecondScreen .Explanation a {
+    font-size: 1.8rem;
+  }
+  #SecondScreen .Explanation a + a {
+    margin-bottom: 2.4rem;
+  }
+}
